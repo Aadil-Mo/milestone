@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this survey.</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name:
+                <input id="name" name="name" type="text" placeholder="Enter your name" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label id="email-label" for="email">Email:
+                <input id="email" name="email" type="email" placeholder="Enter your email" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label id="number-label" for="age">Age:
+                <input id="number" type="number" name="age" min="13" max="120" placeholder="Enter your age (years)" required />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="satisfaction">How satisfied are you with freeCodeCamp?
+                <select id="dropdown" name="satisfaction">
+                    <option value="">(select one)</option>
+                    <option value="1">Very</option>
+                    <option value="2">Decent</option>
+                    <option value="3">Neutral</option>
+                    <option value="4">Bad</option>
+                    <option value="5">Very Bad</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your occupation?</legend>
+            <label for="employed"><input id="employed" type="radio" value="Job" class="radio-label" name="occupation" checked /> Employed</label>
+            <label for="unemployed"><input id="unemployed" value="Jobless" type="radio" class="radio-label" name="occupation" /> Unemployed</label>
+            <label for="student"><input id="student" value="Learning" type="radio" class="radio-label"name="occupation" /> Student</label>
+            <label for="other"><input id="other" type="radio" class="radio-label" value="Anything" name="occupation" /> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="enjoy-coding">Do you enjoy coding?
+                <select id="enjoy-coding" name="enjoy-coding">
+                    <option value="">(select one)</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="neutral">Neutral</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What features do you find most helpful?</legend>
+            <label><input type="checkbox" value="tutorials" name="features"> Tutorials</label>
+            <label><input type="checkbox" value="challenges" name="features"> Coding Challenges</label>
+            <label><input type="checkbox" value="projects" name="features"> Project Examples</label>
+            <label><input type="checkbox" value="forum" name="features"> Forum Support</label>
+            <label><input type="checkbox" value="videos" name="features"> Video Explanations</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What areas of web development are you interested in?</legend>
+            <label><input type="checkbox" value="frontend" name="interests"> Front-end Development</label>
+            <label><input type="checkbox" value="backend" name="interests"> Back-end Development</label>
+            <label><input type="checkbox" value="data-science" name="interests"> Data Science</label>
+            <label><input type="checkbox" value="mobile-dev" name="interests"> Mobile Development</label>
+            <label><input type="checkbox" value="game-dev" name="interests"> Game Development</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="Comments">Any comments/suggestions?:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter comments/suggestions here"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit" />
+
+    </form>
+</body>
+</html>
