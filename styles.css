@@ -1,0 +1,54 @@
+/* Base styles for the entire body of the page */
+body {
+    width: 100%; /* Make the body take up the full width of the viewport */
+    height: 100vh; /* Make the body take up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: #1b1b32; /* Set a dark background color */
+    color: #f5f6f7; /* Set a light text color for readability on the dark background */
+    font-family: Tahoma; /* Use the Tahoma font */
+    font-size: 16px; /* Set the default font size */
+}
+
+/* Styles for the main heading (h1) and the description paragraph (p) */
+h1, p {
+    margin: 1em auto; /* Add vertical margin and center horizontally */
+    text-align: center; /* Center the text */
+}
+
+/* Styles for the main form element */
+form {
+    width: 60vw; /* Set the form width to 60% of the viewport width, making it responsive */
+    max-width: 500px; /* Ensure the form doesn't get too wide on larger screens */
+    min-width: 300px; /* Ensure the form doesn't get too narrow on smaller screens */
+    margin: 0 auto; /* Center the form horizontally on the page */
+    padding-bottom: 2em; /* Add some padding at the bottom of the form for spacing */
+}
+
+/* Styles for the labels of form elements */
+label {
+    display: block; /* Make each label take up the full width, placing form elements on new lines */
+    margin-bottom: 0.8rem; /* Add some margin below each label to separate form elements */
+}
+
+/* Remove the default border from fieldset elements */
+fieldset{
+    border: none;
+}
+
+/* Styles for text input fields, email input fields, number input fields, select dropdowns, and textareas */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 500px; /* Set a fixed width for these input elements */
+    height: 10px; /* Set a specific height for these input elements */
+    padding: 1rem; /* Add padding inside the input elements for better spacing */
+    border: none; /* Remove the default border */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the input elements for visual lift */
+    background-color: white; /* Set the background color to white */
+    color: #333; /* Set a dark text color for the input text */
+    margin-bottom: 1.5rem; /* Add margin below the input elements */
+    font-size: 1rem; /* Set the font size for the input text */
+}
